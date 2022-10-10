@@ -49,7 +49,7 @@ img {
 }
 
 .section {
-  padding: 94px 215px;
+  padding: 94px 0px;
 }
 
 .section-title {
@@ -83,13 +83,12 @@ img {
 
 .page-header {
   display: flex;
-}
-
-.section-header {
   border-bottom-width: 1px;
   border-bottom-style: solid;
   border-bottom-color: #ececec;
-  padding: 32px;
+}
+
+.section-header {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -109,15 +108,20 @@ img {
   font-size: 26px;
   line-height: 1.19;
   text-decoration: none;
-  padding-top: 24px;
-  padding-bottom: 25px;
+  padding: 24px 0px 25px 0px;
   margin-left: auto;
+  display: block;
 }
 
 .logo-studio {
   color: var(--main-logo-color);
 }
 
+.footer .logo-web {
+  padding: 0px;
+  margin-bottom: 20px;
+  display: block;
+}
 .footer .logo-studio {
   color: var(--white-color);
   text-decoration: none;
@@ -135,6 +139,8 @@ img {
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  display: block;
+  padding: 32px 0px;
 }
 
 .site-nav .link:hover,
@@ -156,6 +162,8 @@ img {
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  display: block;
+  padding: 32px 0px;
 }
 
 /*-----HERO-----*/
@@ -163,10 +171,7 @@ img {
 .hero {
   background-color: var(--hero-bg-color);
   text-align: center;
-  padding-top: 200px;
-  padding-right: 452px;
-  padding-bottom: 219px;
-  padding-left: 452px;
+  padding: 200px 0px;
 }
 
 .hero-title {
@@ -193,8 +198,8 @@ img {
 /*-----ABOUT US-----*/
 
 .section-about {
-  padding: 94px 215px;
   display: flex;
+  padding-bottom: 0px;
 }
 
 .about-list {
@@ -259,6 +264,7 @@ img {
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
+  margin-bottom: 10px;
 }
 
 .team-text {
@@ -297,6 +303,10 @@ footer .address:focus,
   margin-bottom: 9px;
 }
 
+.address-list {
+  margin-bottom: 9px;
+}
+
 /* ----- BUTTON ------ */
 
 .button {
@@ -329,6 +339,7 @@ footer .address:focus,
   line-height: 1.62;
   letter-spacing: 0.03em;
   padding: 6px 22px;
+  border: none;
 }
 
 /* ------ PROJECTS ----- */
@@ -349,13 +360,19 @@ footer .address:focus,
 }
 
 .project-link {
-  border-bottom-width: 1px;
-  border-bottom-style: solid;
-  border-bottom-color: #eeeeee;
 }
 
 .project-item {
   padding: 20px 24px;
+  border-right-width: 1px;
+  border-right-style: solid;
+  border-right-color: #eeeeee;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: #eeeeee;
+  border-left-width: 1px;
+  border-left-style: solid;
+  border-left-color: #eeeeee;
 }
 
 .title-project {
