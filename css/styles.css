@@ -328,7 +328,6 @@ footer .address:focus,
   font-size: 16px;
   line-height: 1.62;
   letter-spacing: 0.03em;
-  cursor: pointer;
   padding: 6px 22px;
 }
 
@@ -346,6 +345,7 @@ footer .address:focus,
   display: flex;
   gap: 30px;
   flex-wrap: wrap;
+  flex-basis: calc((100% - 60px) / 3);
 }
 
 .project-link {
