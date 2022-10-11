@@ -9,6 +9,14 @@
   --teem-bg-color: #f5f4fa;
 }
 
+.page {
+  color: var(--primary-text-color);
+  background-color: var(--white-color);
+  font-size: 14px;
+  font-family: Roboto, sans-serif;
+  letter-spacing: 0.03em;
+}
+
 p,
 h1,
 h2,
@@ -24,6 +32,15 @@ ol {
   padding-left: 0;
 }
 
+html {
+  box-sizing: border-box;
+}
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
 address {
   font-style: normal;
 }
@@ -32,14 +49,6 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
-}
-
-.page {
-  color: var(--primary-text-color);
-  background-color: var(--white-color);
-  font-size: 14px;
-  font-family: Roboto, sans-serif;
-  letter-spacing: 0.03em;
 }
 
 .container {
@@ -82,7 +91,6 @@ img {
 /*-----HEADER-----*/
 
 .page-header {
-  display: flex;
   border-bottom-width: 1px;
   border-bottom-style: solid;
   border-bottom-color: #ececec;
@@ -181,7 +189,10 @@ img {
   line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  margin-bottom: 11px;
+  width: 693px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
 }
 
 .hero-button {
@@ -197,15 +208,19 @@ img {
 
 /*-----ABOUT US-----*/
 
-.section-about {
-  display: flex;
-  padding-bottom: 0px;
+.about {
+  padding-bottom: 0;
 }
 
 .about-list {
   display: flex;
   gap: 30px;
 }
+
+.about-item {
+  width: 270px;
+}
+
 .about-title {
   font-size: 14px;
   line-height: 1.14;
@@ -220,7 +235,7 @@ img {
 
 /*-----EXAMPLES-----*/
 
-.section-examples {
+.examples {
 }
 
 .examples-title {
@@ -236,9 +251,6 @@ img {
 
 .team {
   background-color: var(--teem-bg-color);
-}
-
-.team-section {
 }
 
 .staf-list {
@@ -278,7 +290,12 @@ img {
 
 .footer {
   background-color: var(--footer-bg-color);
-  padding: 60px;
+  padding: 60px 0;
+}
+.footer-list {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
 }
 
 .footer .address {
@@ -357,10 +374,10 @@ footer .address:focus,
   display: flex;
   gap: 30px;
   flex-wrap: wrap;
-  flex-basis: calc((100% - 60px) / 3);
 }
 
 .project-link {
+  flex-basis: calc((100% - 60px) / 3);
 }
 
 .project-item {
