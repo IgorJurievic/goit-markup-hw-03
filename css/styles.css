@@ -315,6 +315,7 @@ footer .address:focus,
   font-family: inherit;
   letter-spacing: 0.06em;
   cursor: pointer;
+  border: none;
 }
 
 .button:hover,
